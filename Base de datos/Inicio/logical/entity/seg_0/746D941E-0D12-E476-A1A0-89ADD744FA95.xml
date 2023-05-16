@@ -1,0 +1,64 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="746D941E-0D12-E476-A1A0-89ADD744FA95" name="PROVERDOR">
+<createdBy>paulo</createdBy>
+<createdTime>2023-05-01 23:55:11 UTC</createdTime>
+<ownerDesignName>holaaa</ownerDesignName>
+<engineerTo>
+<item key="439F3A29-7626-B5B2-4A31-BB6A411BF5C0" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Rut" id="C8F408C1-F12D-C02B-3334-2B02F48630C1">
+<createdBy>paulo</createdBy>
+<createdTime>2023-05-01 23:55:25 UTC</createdTime>
+<ownerDesignName>holaaa</ownerDesignName>
+<engineerTo>
+<item key="439F3A29-7626-B5B2-4A31-BB6A411BF5C0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="telefono " id="F79E951C-1491-9672-1DDD-27C87FB68B5D">
+<createdBy>paulo</createdBy>
+<createdTime>2023-05-02 00:14:14 UTC</createdTime>
+<ownerDesignName>holaaa</ownerDesignName>
+<engineerTo>
+<item key="439F3A29-7626-B5B2-4A31-BB6A411BF5C0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Direccion_completa1" id="6AED4203-AD2C-2AD8-A6CD-8D0710D2D542">
+<createdBy>paulo</createdBy>
+<createdTime>2023-05-02 00:15:32 UTC</createdTime>
+<ownerDesignName>holaaa</ownerDesignName>
+<engineerTo>
+<item key="439F3A29-7626-B5B2-4A31-BB6A411BF5C0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nombre" id="BAA9FAF8-A044-79A4-FB39-E05CA1B34468">
+<createdBy>paulo</createdBy>
+<createdTime>2023-05-02 00:20:51 UTC</createdTime>
+<ownerDesignName>holaaa</ownerDesignName>
+<engineerTo>
+<item key="439F3A29-7626-B5B2-4A31-BB6A411BF5C0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

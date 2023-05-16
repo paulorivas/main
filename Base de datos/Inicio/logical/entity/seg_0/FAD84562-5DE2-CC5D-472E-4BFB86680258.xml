@@ -1,0 +1,45 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="FAD84562-5DE2-CC5D-472E-4BFB86680258" name="PRODUCTO_LACTEOS">
+<createdBy>sebas</createdBy>
+<createdTime>2023-05-02 04:42:23 UTC</createdTime>
+<ownerDesignName>holaaa</ownerDesignName>
+<engineerTo>
+<item key="439F3A29-7626-B5B2-4A31-BB6A411BF5C0" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<hierarchicalParent>405B8042-9D8F-F54F-8B3E-A16A8C784571</hierarchicalParent>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="con/sin lactosa" id="492308EE-AF86-FAEF-0222-B88F07A9601D">
+<createdBy>sebas</createdBy>
+<createdTime>2023-05-02 04:42:53 UTC</createdTime>
+<ownerDesignName>holaaa</ownerDesignName>
+<engineerTo>
+<item key="439F3A29-7626-B5B2-4A31-BB6A411BF5C0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="porcentaje_grasa" id="59F46895-0E96-CE49-D380-0D821D4591CD">
+<createdBy>sebas</createdBy>
+<createdTime>2023-05-02 04:43:18 UTC</createdTime>
+<ownerDesignName>holaaa</ownerDesignName>
+<engineerTo>
+<item key="439F3A29-7626-B5B2-4A31-BB6A411BF5C0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

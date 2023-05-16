@@ -1,0 +1,95 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="3D070A27-0BEC-1E61-41C0-B8E49AFB2811" name="BOLETA">
+<createdBy>sebas</createdBy>
+<createdTime>2023-05-02 04:53:01 UTC</createdTime>
+<ownerDesignName>holaaa</ownerDesignName>
+<engineerTo>
+<item key="439F3A29-7626-B5B2-4A31-BB6A411BF5C0" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="fecha_venta" id="17767B56-348C-3B0A-12DE-E7930FAD072F">
+<createdBy>sebas</createdBy>
+<createdTime>2023-05-02 04:53:17 UTC</createdTime>
+<ownerDesignName>holaaa</ownerDesignName>
+<engineerTo>
+<item key="439F3A29-7626-B5B2-4A31-BB6A411BF5C0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_boleta" id="EC1FCDB0-7D04-6261-366F-069FC0F90739">
+<createdBy>sebas</createdBy>
+<createdTime>2023-05-02 04:53:07 UTC</createdTime>
+<ownerDesignName>holaaa</ownerDesignName>
+<engineerTo>
+<item key="439F3A29-7626-B5B2-4A31-BB6A411BF5C0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="total" id="1FD1CB97-5724-85A8-5621-76F06ACF2601">
+<createdBy>sebas</createdBy>
+<createdTime>2023-05-02 04:53:29 UTC</createdTime>
+<ownerDesignName>holaaa</ownerDesignName>
+<engineerTo>
+<item key="439F3A29-7626-B5B2-4A31-BB6A411BF5C0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="monto_descuento" id="5614C751-19DE-99F8-C13B-01AF9AAD20DB">
+<createdBy>sebas</createdBy>
+<createdTime>2023-05-02 05:04:48 UTC</createdTime>
+<ownerDesignName>holaaa</ownerDesignName>
+<engineerTo>
+<item key="439F3A29-7626-B5B2-4A31-BB6A411BF5C0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_compra/venta" id="EA1C3CAF-F982-02E0-FA14-CF8F7E01DDBC">
+<createdBy>sebas</createdBy>
+<createdTime>2023-05-02 05:08:54 UTC</createdTime>
+<generatorID>BC9414A9-59DF-CE35-E671-20AE0F4FD935</generatorID>
+<ownerDesignName>holaaa</ownerDesignName>
+<engineerTo>
+<item key="439F3A29-7626-B5B2-4A31-BB6A411BF5C0" value="true"/>
+</engineerTo>
+<referedAttribute>F8C6CDCC-227D-C16D-CABB-4FF5C8AD66FB</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="4094CE3D-DA60-F1C7-7CBC-D990A95A3207" name="BOLETA PK">
+<createdBy>sebas</createdBy>
+<createdTime>2023-05-02 04:53:16 UTC</createdTime>
+<ownerDesignName>holaaa</ownerDesignName>
+<engineerTo>
+<item key="439F3A29-7626-B5B2-4A31-BB6A411BF5C0" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>EC1FCDB0-7D04-6261-366F-069FC0F90739</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

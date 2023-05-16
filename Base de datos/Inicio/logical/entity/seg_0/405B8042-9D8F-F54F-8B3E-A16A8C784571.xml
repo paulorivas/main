@@ -1,0 +1,151 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="405B8042-9D8F-F54F-8B3E-A16A8C784571" name="PRODUCTO ">
+<createdBy>paulo</createdBy>
+<createdTime>2023-05-02 00:25:37 UTC</createdTime>
+<ownerDesignName>holaaa</ownerDesignName>
+<engineerTo>
+<item key="439F3A29-7626-B5B2-4A31-BB6A411BF5C0" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Id_producto" id="FAB141B6-AA69-661C-AFAC-7B0A48307C4C">
+<createdBy>paulo</createdBy>
+<createdTime>2023-05-02 00:25:49 UTC</createdTime>
+<ownerDesignName>holaaa</ownerDesignName>
+<engineerTo>
+<item key="439F3A29-7626-B5B2-4A31-BB6A411BF5C0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre" id="A982ABA7-BE8C-627F-CB76-03B815E2FBAA">
+<createdBy>sebas</createdBy>
+<createdTime>2023-05-02 04:41:42 UTC</createdTime>
+<ownerDesignName>holaaa</ownerDesignName>
+<engineerTo>
+<item key="439F3A29-7626-B5B2-4A31-BB6A411BF5C0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Fecha_variedad" id="04CF66BD-EAC4-547E-C4C3-769363876D03">
+<createdBy>paulo</createdBy>
+<createdTime>2023-05-02 00:26:28 UTC</createdTime>
+<ownerDesignName>holaaa</ownerDesignName>
+<engineerTo>
+<item key="439F3A29-7626-B5B2-4A31-BB6A411BF5C0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Descripcion " id="46C8BF5A-5537-1193-3B08-FD56BFFC1B4B">
+<createdBy>paulo</createdBy>
+<createdTime>2023-05-02 00:26:56 UTC</createdTime>
+<ownerDesignName>holaaa</ownerDesignName>
+<engineerTo>
+<item key="439F3A29-7626-B5B2-4A31-BB6A411BF5C0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Precio_unitario_sin_iva" id="B013F12E-06FA-E6E5-DF7A-3AA448383216">
+<createdBy>paulo</createdBy>
+<createdTime>2023-05-02 00:27:29 UTC</createdTime>
+<ownerDesignName>holaaa</ownerDesignName>
+<engineerTo>
+<item key="439F3A29-7626-B5B2-4A31-BB6A411BF5C0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Clasificacion " id="6FEE0BA3-A86D-7BE0-3F3B-61B5A7B4C60F">
+<createdBy>paulo</createdBy>
+<createdTime>2023-05-02 00:28:48 UTC</createdTime>
+<ownerDesignName>holaaa</ownerDesignName>
+<engineerTo>
+<item key="439F3A29-7626-B5B2-4A31-BB6A411BF5C0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_marca" id="7E9B9FA8-E792-E972-7768-79D8C1C854BF">
+<createdBy>sebas</createdBy>
+<createdTime>2023-05-02 04:45:06 UTC</createdTime>
+<generatorID>83FC173C-DD54-2BD2-AA1E-DE7E2F7D8EC8</generatorID>
+<ownerDesignName>holaaa</ownerDesignName>
+<engineerTo>
+<item key="439F3A29-7626-B5B2-4A31-BB6A411BF5C0" value="true"/>
+</engineerTo>
+<referedAttribute>7F57D76E-87AD-2889-D89B-D178FC9FC08E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_cotizacion" id="79906016-14B2-9159-C730-A3D53E00E295">
+<createdBy>sebas</createdBy>
+<createdTime>2023-05-02 05:30:14 UTC</createdTime>
+<generatorID>08B1E8AA-9754-C690-E569-2E9FF57238EC</generatorID>
+<ownerDesignName>holaaa</ownerDesignName>
+<engineerTo>
+<item key="439F3A29-7626-B5B2-4A31-BB6A411BF5C0" value="true"/>
+</engineerTo>
+<referedAttribute>D6F1F02F-85A1-6D04-D684-7FCF8A29C4F6</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_boleta" id="B7800B6D-BB8E-F040-3BD2-C7E6432ABD8B">
+<createdBy>sebas</createdBy>
+<createdTime>2023-05-02 05:32:13 UTC</createdTime>
+<generatorID>C9FDB0E8-D301-EC08-DB57-0F7D2A1F9288</generatorID>
+<ownerDesignName>holaaa</ownerDesignName>
+<engineerTo>
+<item key="439F3A29-7626-B5B2-4A31-BB6A411BF5C0" value="true"/>
+</engineerTo>
+<referedAttribute>EC1FCDB0-7D04-6261-366F-069FC0F90739</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="67D9CAE8-746B-B559-46DA-C2C396A39148" name="PRODUCTO PK">
+<createdBy>sebas</createdBy>
+<createdTime>2023-05-02 04:40:28 UTC</createdTime>
+<ownerDesignName>holaaa</ownerDesignName>
+<engineerTo>
+<item key="439F3A29-7626-B5B2-4A31-BB6A411BF5C0" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>FAB141B6-AA69-661C-AFAC-7B0A48307C4C</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

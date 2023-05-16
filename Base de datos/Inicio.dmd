@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="holaaa" id="335EE3CF-647E-EDF2-A151-21CA79790B78" version="3.5">
+<createdBy>paulo</createdBy>
+<createdTime>2023-05-01 23:48:14 UTC</createdTime>
+<ownerDesignName>ejercicio 4 MERE</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>335EE3CF-647E-EDF2-A151-21CA79790B78</designId>
+</OSDM_Design>
