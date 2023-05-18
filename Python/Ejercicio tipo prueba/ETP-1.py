@@ -29,13 +29,6 @@ while banderados:
         while not opc.isnumeric():
             print('Ingresa un valor correcto')
             opc = input('Opción: ')
-        while int(opc) < 0:
-            print('Ingresa un valor superior a 0')
-            opc = input('Opción: ')
-        while int(opc) > 6:
-            print('Ingresa un valor superior a 0')
-            opc = input('Opción: ')
-
         if int(opc) == 4:
             print('Pedido anulado')
             bandera=False
@@ -126,4 +119,4 @@ while banderados:
             bandera=False
             banderados=False
         else:
-            print('Has elegido una opción que novexiste')
+            print('Has elegido una opción que no existe')
