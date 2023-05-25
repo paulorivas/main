@@ -84,12 +84,6 @@ while banderados:
             while not opc.isnumeric():
                 print('Ingresa un valor correcto')
                 opc = input('Opción: ')
-            while int(opc) < 0:
-                print('Ingresa un valor superior a 0')
-                opc = input('Opción: ')
-            while int(opc) > 3:
-                print('Ingresa un valor superior a 0')
-                opc = input('Opción: ')
 
             if int(opc) == 1:
                 descuento=0
