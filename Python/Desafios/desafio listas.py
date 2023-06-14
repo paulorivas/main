@@ -1,11 +1,10 @@
 lista_producto = []
 lista_pk = []
 codigo = 000
-producto_final = ''
 contador = 0
 producto = ''
 opc = 0
-
+x = 0
 com_nom = ''
 def validacion(texto):
     producto = input(f'Producto a {texto}: ')
@@ -34,7 +33,10 @@ while True:
         opc = input('Opcion: ')
     
     if int(opc) == 1:
-        producto = validacion('Agregar')
+        producto = input(f'Producto: ')
+        while not producto.isalpha():
+            print('Ingresa un nombre valido')
+            producto = input('Producto: ')
         contador = lista_producto.count(producto.lower().title())
         if contador == 1:
             print(f'Actualmente existe el {producto}')
@@ -55,8 +57,10 @@ while True:
                 Producto localizado:
     Producto: {lista_producto[i]}      Código: {busqueda}
                 ''')
+                break
             else:
                 print('El código ingresado no se encontró')
+                break
     elif int(opc) == 3:
         print('------------------------------------')
         for x in lista_producto:
