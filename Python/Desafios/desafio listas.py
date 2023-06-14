@@ -1,9 +1,11 @@
 lista_producto = []
+lista_pk = []
+codigo = 000
 producto_final = ''
 contador = 0
 producto = ''
 opc = 0
-x = 0
+
 com_nom = ''
 def validacion(texto):
     producto = input(f'Producto a {texto}: ')
@@ -13,16 +15,16 @@ def validacion(texto):
     return producto
 
 ################################################################################################################################################################################################################################################################
-
 while True:
     print('''
------------Bienvenido al Almacen Duoc-----------
+-----------Bienvenido al Almacen Duoc----------------
 1) Agregar Producto
-2) Buscar Producto (Verdadero o Falso)
+2) Buscar Producto
 3) Listar Producto
 4) Modificar Producto 
 5) Eliminar Producto  
 6) Salir
+-----------------------------------------------------
     ''')
 
     opc = input('Opcion: ')
@@ -33,41 +35,56 @@ while True:
     
     if int(opc) == 1:
         producto = validacion('Agregar')
-        producto_final = producto.lower().title()
-        lista_producto.append(producto_final)
-            
+        contador = lista_producto.count(producto.lower().title())
+        if contador == 1:
+            print(f'Actualmente existe el {producto}')
+            contador = 0
+        else:
+            lista_producto.append(producto.lower().title())
+            codigo = codigo + 1
+            lista_pk.append('8787'+str(codigo))
+            print(lista_pk)
     elif int(opc) == 2:
-        producto = validacion('Buscar')
-        for x in lista_producto:
-            if x == producto.lower().title():
-                print('Se encuentra tu producto')
-                break
+        busqueda = input("Busca por codigo: ")
+        while not busqueda.isnumeric():
+            print('Codigo invalido, ingrese solo numeros...')
+            busqueda = input("Busca por codigo: ")
+        for i in range(len(lista_pk)):
+            if busqueda == lista_pk[i]:
+                print(f'''
+                Producto localizado:
+    Producto: {lista_producto[i]}      Código: {busqueda}
+                ''')
             else:
-                print(f'No se encuentra el producto: {producto}')
-                break
-                
-            
+                print('El código ingresado no se encontró')
     elif int(opc) == 3:
         print('------------------------------------')
         for x in lista_producto:
-            print(f'| {x}')
+            print(f'|{lista_pk[lista_producto.index(x)]} {x}')
         print('------------------------------------')
     elif int(opc) == 4:
-        producto = validacion('Modificar')
-        contador = lista_producto.count(producto.lower().title())
+        busqueda = input("Codigo del producto: ")
+        while not busqueda.isnumeric():
+            print('Codigo invalido, ingrese solo numeros...')
+            busqueda = input("Busca por codigo: ")
+        contador = lista_pk.count(busqueda)
         if contador == 1:
-            print('Se encuentra tu producto')
-            x = lista_producto.index(producto.lower().title())
+            x = lista_pk.index(busqueda)
             com_nom = input('Cambiar nombre del producto: ')
             lista_producto.pop(x)
             lista_producto.insert(x, com_nom.lower().title())
         else:
             print('No existe el producto ingresado')
     elif int(opc) == 5:
-        producto = validacion('Eliminar')
-        contador = lista_producto.count(producto.lower().title())
+        busqueda = input("Codigo del producto: ")
+        while not busqueda.isnumeric():
+            print('Codigo invalido, ingrese solo numeros...')
+            busqueda = input("Busca por codigo: ")
+        contador = lista_pk.count(busqueda)
         if contador == 1:
-            lista_producto.remove(producto.lower().title())
+            x = lista_pk.index(busqueda)
+            lista_producto.pop(x)
+            lista_pk.pop(x)
             print('Se elimino de manera exitosa el producto')
         else:
             print('No existe el producto ingresado')
@@ -75,4 +92,4 @@ while True:
         print('Nos vimo')
         break
     else:
-        print('El valor indicado es incorrecto... seleccione una opcion con un valor numerico')
+       print('El valor indicado es incorrecto... seleccione una opcion con un valor numerico')
